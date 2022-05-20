@@ -1,5 +1,5 @@
 <h1>User info</h1>
-<div *ngIf="userWithLicenses$ | async as user" [ngStyle]="{ display: 'flex' }">
+<div *ngIf="userWithLicenses$ | async as user">
   Name : {{ user.name }} Age: {{ user.age }}
   <div *ngIf="user.licenses.length > 0">
     <div *ngFor="let license of user.licenses">
